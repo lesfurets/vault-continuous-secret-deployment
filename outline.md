@@ -1,0 +1,62 @@
+# Outline
+
+- Context
+    - Secrets (insurer credentials, keys, passphrase, salt, database, etc.)
+        - out of scope: customer passwords, PII
+    - Introduction on continuous delivery / lambda infrastructure
+    - Infra as code: secrets in source code
+    - Deployment: do not try vault without ansible or equivalent
+    - Overview of password workflow (from code to production)
+        - read and write on creds (not necessarly dev)
+        - (personna agile: alice jon and bob: code / deploy / edit secret)
+        - staging secrets: dev read all, preprod / prod restricted
+        - production server: can read all secrets (subset of secrets)
+- Security
+    - Threat model explanation
+    - Attack surface, etc. explanation
+    - MITM
+    - OTP
+    - STRIDE
+        - Spoofing of user identity
+        - Tampering
+        - Repudiation
+        - Information disclosure (privacy breach or data leak)
+        - Denial of service (D.o.S)
+        - Elevation of privilege
+    - Haschicorp Vault
+        - typical use case
+        - pain points: attack surface, staging, sla, master / slave
+	- Global concepts: seal (key) + auth (one-time token)
+	- With seal and auth, you can implement a one-time connection
+	- Lightweight, performant and battle hardened
+    - https://www.vaultproject.io/docs/vs/index.html
+        - State of the art other techs
+        - Keywhiz, Amazon KMS, etc.
+        - ansible vault: do not handle production server
+- Threat Model
+    - Production machines only
+    - 1 vault per 1 app
+    - Software factory also possible
+- Video demo
+    - TPM
+    - Overview delivery pipeline
+	- Building a vault copy (from local secrets store, only what you need)
+	- Build infrastructure implications (secrets written on disk, ramfs)
+	- Artifact management (sealed vault is public, key and token are not)
+	- Deployment (send vault to production, remote unseal)
+	- Application startup (start app with one-time token, startup checks)
+    - Ansible execution -> details
+    - Monitoring
+    - Java code to query / fetch -> live code IDE
+        - Secure coding
+        - Database password in clear in logs
+- Performance / scalability
+    - Ex: batch fiches with salt
+    - Stats from our usage
+    - Decentralized nature makes it easier to manage
+    - Avoid network failures (local socket)
+- Pitfalls
+    - Secrets migration: from cleartext to ciphertext
+    - Testing: software factory access to production creds?
+    - Build everything everytime: certificate expiration
+
