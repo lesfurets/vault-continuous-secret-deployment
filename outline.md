@@ -60,3 +60,7 @@
     - Testing: software factory access to production creds?
     - Build everything everytime: certificate expiration
 
+## Resources
+
+- https://blog-en.rocro.com/2018/06/15/how-to-prevent-secrets-in-source-code-with-inspecode/
+

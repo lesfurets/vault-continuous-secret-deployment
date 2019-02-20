@@ -1,0 +1,22 @@
+{
+  "name": "vault-continuous-secret-deployment",
+  "version": "1.0.0",
+  "authors": [
+    "Alexandre DuBreuil <code@alexandredubreuil.com>"
+  ],
+  "description": "Deploying your application secrets: Hashicorp Vault and continuous delivery",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "https://www.lesfurets.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reveal.js": "~3.7.0"
+  }
+}
