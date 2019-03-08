@@ -385,11 +385,12 @@ body {
 }
 
 .footer a {
+  color: white;
+  display: inline-block;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 50px;
+  margin: 30px 15px 15px 15px;
+  vertical-align: top;
 }
 
 .footer a:last-child {
@@ -436,7 +437,7 @@ body {
 }
 
 /*********************************************
- * Google code prettifu
+ * GOOGLE CODE PRETTIFY
  *********************************************/
 
 pre.prettyprint,
@@ -482,6 +483,20 @@ code.output span.pln,
 code.output span.pun {
   color: black !important;
 }
+
+/*********************************************
+ * COLORS
+ *********************************************/
+
+.reveal .color-zen-red { color: #cc9393; }
+.reveal .color-zen-orange { color: #e3ceab; }
+.reveal .color-zen-yellow { color: #efef8f; }
+.reveal .color-zen-green { color: #7f9f7f; } 
+.reveal .color-zen-blue { color: #8cd0d3; }
+
+/*********************************************
+ * PRINT
+ *********************************************/
 
 @media print {
   .reveal code {
