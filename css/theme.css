@@ -357,12 +357,21 @@ body {
  * FOOTER
  *********************************************/
 
+.fullScreen .footer {
+  transform: translateY(100px);
+}
+
+.footer.hide {
+  opacity: 0.75;
+}
+
 .footer {
   background-color: #002837;
   background-image: url("../png/ocode-bg.png");
   bottom: 0;
   left: 0;
   position: absolute;
+  transition: all 500ms;
   width: 100%;
   z-index: 2;
 }
@@ -448,10 +457,32 @@ code.prettyprint {
   padding: inherit !important;
 }
 
+pre mark,
+code mark {
+  background-color: lightpink;
+}
+
+pre mark.green,
+code mark.green {
+  background-color: lightgreen;
+}
+
+pre mark.orange,
+code mark.orange {
+  background-color: lightsalmon;
+}
+
+pre mark.blue,
+code mark.blue {
+  background-color: lightblue;
+}
+
 pre mark .pln,
 code mark .pln,
 pre mark .typ,
 code mark .typ,
+pre mark .str,
+code mark .str,
 pre mark .pun,
 code mark .pun {
   color: #000 !important;
@@ -465,14 +496,6 @@ pre .pln.doov {
 pre .pln.operator {
   font-weight: bold;
   color: #fffcad;
-}
-
-mark.true-predicate {
-  background-color: lightgreen;
-}
-
-mark.false-predicate {
-  background-color: lightcoral;
 }
 
 code.output {
