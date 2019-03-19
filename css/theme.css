@@ -76,12 +76,23 @@ body {
  *********************************************/
 
 .reveal h1 {
+  font-size: 200%;
+}
+
+.reveal h2 {
   font-size: 150%;
 }
-.reveal h1.code {
-  font-family: monospace;
-  text-align: left;
-  text-transform: inherit
+
+.reveal h3 {
+  font-size: 125%;
+}
+
+.reveal h4 {
+  font-size: 120%;
+}
+
+.reveal h5 {
+  font-size: 115%;
 }
 
 .reveal h1,
@@ -99,16 +110,8 @@ body {
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); 
 }
 
-.reveal h1.lower,
-.reveal h2.lower,
-.reveal h3.lower,
-.reveal h4.lower,
-.reveal h5.lower,
-.reveal h6.lower {
-  text-transform: lowercase;
-}
-
-.reveal h3 {
+.reveal h1,
+.reveal h2 {
   border-bottom: 1px solid #59B2AC;
   border-bottom: 1px solid white;
   padding: 0 20px 20px 20px;
