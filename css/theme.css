@@ -262,6 +262,11 @@ body {
   border-radius: 5px;
 }
 
+.reveal section img.logo {
+  vertical-align: middle;
+  margin: 10px;
+}
+
 .reveal .herve-francois {
   border: none;
   box-shadow: none;
@@ -372,9 +377,11 @@ body {
   background-color: #002837;
   background-image: url("../png/ocode-bg.png");
   bottom: 0;
+  height: 75px;
   left: 0;
   position: absolute;
   transition: all 500ms;
+  white-space: nowrap;
   width: 100%;
   z-index: 2;
 }
@@ -385,8 +392,7 @@ body {
 
 .footer .logo-lesfurets {
   height: 40px;
-  margin-top: 10px;
-  margin-left: 10px;
+  margin: 5px;
   padding: 10px;
 }
 
@@ -396,13 +402,30 @@ body {
   margin: 10px;
 }
 
-.footer a {
-  color: white;
+.footer .card {
   display: inline-block;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
-  margin: 30px 15px 15px 15px;
+  margin: 10px 0 0 0;
   vertical-align: top;
+}
+
+.footer .card p {
+  color: #ccc;
+  margin: 2px;
+}
+
+.footer .card a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer .card img {
+  background-color: #ccc;
+  border-radius: 5px;
+  padding: 1px 2px;
+  margin: 1px 5px 1px 2px;
+  vertical-align: middle;
 }
 
 .footer a:last-child {
@@ -421,15 +444,6 @@ body {
     text-align: center;
 }
 
-.reveal p {
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.reveal p.quote {
-    font-size: 0.9em;
-}
-
 .reveal .code-wrapper.small {
     font-size: 0.7em;
 }
@@ -438,6 +452,14 @@ body {
     font-size: 0.55em;
 }
 
+.reveal p {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.reveal p.quote {
+    font-size: 0.9em;
+}
 .reveal code.code {
     display: inline-block;
     font-family: monospace;
@@ -482,13 +504,15 @@ code mark.blue {
 
 pre mark .pln,
 code mark .pln,
+pre mark .atv,
+code mark .atv,
 pre mark .typ,
 code mark .typ,
 pre mark .str,
 code mark .str,
 pre mark .pun,
 code mark .pun {
-  color: #000 !important;
+  color: black !important;
 }
 
 pre .pln.doov {
@@ -528,8 +552,11 @@ code.output span.pun {
   .reveal code {
     background-color: white;
   }
+
   pre mark .pln,
   code mark .pln,
+  pre mark .atv,
+  code mark .atv,
   pre mark .typ,
   code mark .typ,
   pre mark .pun,
