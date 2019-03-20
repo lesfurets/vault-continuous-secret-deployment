@@ -195,28 +195,28 @@ body {
  *********************************************/
 
 .container-grid-2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .container-grid-2 > * {
-    flex: 0 0 auto;
-    width: 50%;
+  flex: 0 0 auto;
+  width: 50%;
 }
 
 .container-grid-2 > ul {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 
 .container-grid-40p {
-    flex: 0 0 auto;
-    width: 40%;
+  flex: 0 0 auto;
+  width: 40%;
 }
 
 .container-grid-60p {
-    flex: 0 0 auto;
-    width: 60%;
+  flex: 0 0 auto;
+  width: 60%;
 }
 
 
@@ -438,36 +438,36 @@ body {
 }
 
 .reveal .code-wrapper {
-    font-size: 0.75em;
-    position: relative;
-    right: 50%;
-    text-align: center;
+  font-size: 0.75em;
+  position: relative;
+  right: 50%;
+  text-align: center;
 }
 
 .reveal .code-wrapper.small {
-    font-size: 0.7em;
+  font-size: 0.7em;
 }
 
 .reveal .code-wrapper.smaller {
-    font-size: 0.55em;
+  font-size: 0.55em;
 }
 
 .reveal p {
-    padding-left: 10%;
-    padding-right: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .reveal p.quote {
-    font-size: 0.9em;
+  font-size: 0.9em;
 }
 .reveal code.code {
-    display: inline-block;
-    font-family: monospace;
-    line-height: 1.25;
-    padding: 5px 20px;
-    text-align: left;
-    overflow: hidden;
-    margin-right: -100%;
+  display: inline-block;
+  font-family: monospace;
+  line-height: 1.25;
+  padding: 5px 20px;
+  text-align: left;
+  overflow: hidden;
+  margin-right: -100%;
 }
 
 /*********************************************
