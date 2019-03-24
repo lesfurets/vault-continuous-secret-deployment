@@ -89,11 +89,11 @@ body {
 }
 
 .reveal h4 {
-  font-size: 120%;
+  font-size: 110%;
 }
 
 .reveal h5 {
-  font-size: 115%;
+  font-size: 100%;
 }
 
 .reveal h1,
@@ -123,6 +123,7 @@ body {
 /*********************************************
  * BLOCKQUOTES
  *********************************************/
+
 .reveal blockquote {
   padding: 25px;
   background: rgba(255, 255, 255, 0.05);
@@ -192,7 +193,7 @@ body {
 }
 
 /*********************************************
- * Flex box layout
+ * FLEX BOX LAYOUT
  *********************************************/
 
 .container-grid-2 {
@@ -220,6 +221,27 @@ body {
   width: 60%;
 }
 
+/*********************************************
+ * THREAT MODEL
+ *********************************************/
+
+.reveal .threat-model {
+  background-color: #cc9393;
+  display: inline-block;
+  padding: 25px;
+  position: absolute;
+  line-height: 1em;
+}
+
+.reveal .threat-model.key {
+  left: 25px;
+  margin-top: -250px;
+}
+
+.reveal .threat-model.ott {
+  right: 25px;
+  margin-top: 250px;
+}
 
 /*********************************************
  * LINKS
