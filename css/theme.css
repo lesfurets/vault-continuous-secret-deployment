@@ -162,6 +162,11 @@ body {
   text-align: left;
 }
 
+.reveal li .mono {
+  font-family: monospace;
+  font-size: 110%
+}
+
 /*********************************************
  * LAYOUT
  *********************************************/
@@ -240,12 +245,13 @@ body {
 
 .reveal .threat-model.ott {
   right: 25px;
-  margin-top: 250px;
+  margin-top: 400px;
 }
 
 /*********************************************
  * LINKS
  *********************************************/
+
 .reveal a:not(.image) {
   color: #59B2AC;
   text-decoration: none;
@@ -320,6 +326,7 @@ body {
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
+
 .reveal .controls {
   height: 90px;
   width: 90px;
@@ -364,6 +371,7 @@ body {
 /*********************************************
  * PROGRESS BAR
  *********************************************/
+
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2); 
 }
