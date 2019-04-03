@@ -18,8 +18,26 @@ La gestion des secrets applicatifs, tels que les identifiants de connexion aux b
 
 ## Notes
 
-- Use https://hub.docker.com/r/xakra/ansible-dockerized/ for target in ansible
-- Remove TPM from code, use mock
-- Remove nexus from code, use pre-packaged tar
+- add fragment transitions (see the reveal.js github prensentation)
+- add code highlight (see the reveal.js github prensetation)
+- add notes for some slides (ex french words for stride)
+- add better transitions on background and foreground for fullscreen slides
+- bigger font on graphs
 
+- 18 add graph?
+- 22 tpm capture d'ecran
+- 22 tpm fiabilite utiliser le mots
+- 26 data store pour les sandwitch
+- 26 legende pour les elements
+- 26 actions plus grands
+
+- check how docker works for tmpfs ramfs
+- question ? check how licensing works
+- question ? check certificate
+
+- add links
+    - https://www.vaultproject.io/docs/vs/chef-puppet-etc.html
+    - https://www.hashicorp.com/blog/using-hashicorps-vault-with-chef
+    - https://www.reddit.com/r/devops/comments/4hgxbh/hashicorps_vault_how_are_you_using_it/
+    - https://www.reddit.com/r/devops/comments/8zmibk/aws_secrets_manager_vs_hashicorp_vault_what_can/
 

@@ -57,6 +57,10 @@ body {
   line-height: 1.25;
 }
 
+.reveal li {
+  line-height: 1.15;
+}
+
 /*********************************************
  * OPENING SLIDE
  *********************************************/
@@ -234,18 +238,32 @@ body {
   background-color: #cc9393;
   display: inline-block;
   padding: 25px;
-  position: absolute;
   line-height: 1em;
 }
 
+.reveal .threat-model.text {
+  background-color: #ccc;
+  color: #333;
+}
+
 .reveal .threat-model.key {
+  position: absolute;
   left: 25px;
-  margin-top: -250px;
+  margin-top: -300px;
+}
+
+.reveal .threat-model.key.text {
+  margin-top: -150px;
 }
 
 .reveal .threat-model.ott {
+  position: absolute;
   right: 25px;
-  margin-top: 400px;
+  margin-top: 600px;
+}
+
+.reveal .threat-model.ott.text {
+  margin-top: 460px;
 }
 
 /*********************************************
@@ -537,6 +555,11 @@ code mark.orange {
 pre mark.blue,
 code mark.blue {
   background-color: lightblue;
+}
+
+pre mark.white,
+code mark.white {
+  background-color: white;
 }
 
 pre mark .pln,
