@@ -41,3 +41,16 @@ La gestion des secrets applicatifs, tels que les identifiants de connexion aux b
     - https://www.reddit.com/r/devops/comments/4hgxbh/hashicorps_vault_how_are_you_using_it/
     - https://www.reddit.com/r/devops/comments/8zmibk/aws_secrets_manager_vs_hashicorp_vault_what_can/
 
+- stephane
+    - (ok) pas clair que c'est ultra spécifique à lf
+    - (ok) c'est un retour d'experience, il faut être clair là dessus
+    - (ok) avantages / inconvénients + objectifs + retours d'experience sur avantages (inconvénients)
+    - (ok) avantage : ovh point faible reseau on s'est pris des tuiles (mais pas sur vault)
+    - (ok) inconvénients : on peut pas redémarrer les machines (mais pas un problème pour l'instant)
+    - (ok) retour experience : solution complexe, pourquoi on est parti là-dedans
+    - (todo) retour experience : on a eu raison là-dessus, moins là-dessus
+    - (ok) changement culturels pour les devs -> challenge (humain)
+    - (ok) certificats ssl -> pas très intéressant
+    - (ok) tpm -> pas sur si c'est vrai outil du marche
+    - (ok) continuous delivery -> avant le threat model
+
