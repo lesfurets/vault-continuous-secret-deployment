@@ -642,5 +642,62 @@ code.output span.pun {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .footer {
+    height: 50px;
+  }
+
+  .footer .logo-lesfurets {
+    height: 30px;
+    padding: 5px;
+  }
+
+  .footer .logo-conference {
+    height: 30px;
+  }
+
+  .footer .card {
+    font-size: 75%;
+    margin: 7px 0 0 0;
+  }
+
+  .footer .card img {
+    width: 10px;
+  }
+
+  .reveal .slide-number {
+    bottom: 15px;
+    right: 115px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer {
+    height: 30px;
+  }
+
+  .footer .logo-lesfurets {
+    height: 15px;
+    padding: 3px;
+  }
+
+  .footer .logo-conference {
+    height: 15px;
+    margin: 7px;
+  }
+
+  .footer .card {
+    font-size: 50%;
+    margin: 3px 0 0 0;
+  }
+
+  .footer .card img {
+    width: 7px;
+  }
+
+  .reveal .slide-number {
+    display: none !important;
+  }
+}
 
 /** vim: set tabstop=2 softtabstop=2 shiftwidth=2 expandtab smarttab: **/
