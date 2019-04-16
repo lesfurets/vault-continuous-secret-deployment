@@ -16,41 +16,15 @@ Managing application secrets, like database credentials, passphrases, salts and 
 
 La gestion des secrets applicatifs, tels que les identifiants de connexion aux bases de données, les phrases secrètes ("passphrase"), les sels ("salt") et les clefs privées, est difficile. La disponibilité de ces éléments est critique au bon fonctionnement d'une application, mais ils ont besoin d'être correctement protégé afin de réduire la surface d'attaque du système. La plupart des systèmes de gestion de secrets, comme Hashicorp Vault, sont utilisés comme une base de données centralisée, mais cela devient un point de défaillance unique et nécessite un effort supplémentaire pour sécuriser l'ensemble du système. Pourquoi ne pas déployer vos secrets, avec Hashicorp Vault, en même temps que votre application ? Grâce à votre usine logicielle, il est possible de déployer une copie de vos secrets dans un Vault sécurisé par un "one time token", accessible seulement par votre application. Dans cette présentation, nous allons présenter un pipeline de livraison continue permettant cette approche, montrer les implications de la gestion de secrets dans votre infrastructure de build, et utiliser le "threat modeling" pour vérifier la sécurité du Vault déployé.
 
+## Complement text
+
+Cette présentation est la synthèse de l'expérience acquise suite au développement et à la mise en production de la sécurisation des secrets applicatifs chez LesFurets.com. Cet effort comprend la suppression des mots de passe et données sensibles dans le code source, la sécurisation des machines de production et la formation de l'équipe de développement sur les bonnes pratiques de sécurité, notamment sur l'usage du "threat modeling" pour les parties critiques de l'application.
+
+This presentation is the experience feedback of the development and operations work on securing application secrets at LesFurets.com. The audience will learn about a specific real world use case and see how a development team can design a secure secret management system using Hashicorp Vault, Jenkins, Ansible and continuous delivery. No specific level is required for this talk, a developer attending will learn about the different aspects of operations, development and devops.
+
 ## Notes
 
 - add fragment transitions (see the reveal.js github prensentation)
 - add code highlight (see the reveal.js github prensetation)
-- add notes for some slides (ex french words for stride)
 - add better transitions on background and foreground for fullscreen slides
-- bigger font on graphs
-
-- 18 add graph?
-- 22 tpm capture d'ecran
-- 22 tpm fiabilite utiliser le mots
-- 26 data store pour les sandwitch
-- 26 legende pour les elements
-- 26 actions plus grands
-
-- check how docker works for tmpfs ramfs
-- question ? check how licensing works
-- question ? check certificate
-
-- add links
-    - https://www.vaultproject.io/docs/vs/chef-puppet-etc.html
-    - https://www.hashicorp.com/blog/using-hashicorps-vault-with-chef
-    - https://www.reddit.com/r/devops/comments/4hgxbh/hashicorps_vault_how_are_you_using_it/
-    - https://www.reddit.com/r/devops/comments/8zmibk/aws_secrets_manager_vs_hashicorp_vault_what_can/
-
-- stephane
-    - (ok) pas clair que c'est ultra spécifique à lf
-    - (ok) c'est un retour d'experience, il faut être clair là dessus
-    - (ok) avantages / inconvénients + objectifs + retours d'experience sur avantages (inconvénients)
-    - (ok) avantage : ovh point faible reseau on s'est pris des tuiles (mais pas sur vault)
-    - (ok) inconvénients : on peut pas redémarrer les machines (mais pas un problème pour l'instant)
-    - (ok) retour experience : solution complexe, pourquoi on est parti là-dedans
-    - (todo) retour experience : on a eu raison là-dessus, moins là-dessus
-    - (ok) changement culturels pour les devs -> challenge (humain)
-    - (ok) certificats ssl -> pas très intéressant
-    - (ok) tpm -> pas sur si c'est vrai outil du marche
-    - (ok) continuous delivery -> avant le threat model
 
