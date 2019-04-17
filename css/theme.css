@@ -229,6 +229,21 @@ body {
 }
 
 /*********************************************
+ * FRAGMENT
+ *********************************************/
+
+.reveal .slides section .fragment.grow.visible {
+  -webkit-transform: none;
+  display: inline-block;
+  transform: none;
+}
+
+.reveal .slides section .fragment.grow.visible.current-fragment {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/*********************************************
  * THREAT MODEL
  *********************************************/
 
@@ -538,6 +553,7 @@ code.prettyprint {
 pre mark,
 code mark {
   background-color: lightpink;
+  /*background-color: rgba(99, 71, 76, 0.5);*/
 }
 
 pre mark.green,
