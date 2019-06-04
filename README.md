@@ -10,6 +10,9 @@ Continuous secrets deployment at LesFurets using Hashicorp Vault and Ansible.
 - 2019/04/17 - Devoxx @ Paris, France
     - [Slides](https://lesfurets.github.io/vault-continuous-secret-deployment/vault-continuous-secret-deployment-devoxx.html)
     - Video: upcoming
+- 2019/06/12 - OpenR&Day @ Paris, France
+    - [Slides](https://lesfurets.github.io/vault-continuous-secret-deployment/vault-continuous-secret-deployment-openrnday.html)
+    - Video: upcoming
 
 ## Deploying your application secrets: Hashicorp Vault and continuous delivery (en)
 
